@@ -17,11 +17,11 @@ const (
 func main() {
 	var excludeTests bool
 	var buildTags string
-	flag.BoolVar(&excludeTests, "exclude-tests", false, "do not check test-only package or test executable")
+	flag.BoolVar(&excludeTests, "exclude-tests", false, "do not check test-only package or test executables")
 	flag.StringVar(&buildTags, "tags", "", "comma-separated list of build tags to include")
 
 	log.SetFlags(0) // reset flags to remove time prefix
-	log.SetPrefix("go-compiles: ")
+	log.SetPrefix("compiles: ")
 
 	flag.Parse()
 	if len(flag.Args()) == 0 {
