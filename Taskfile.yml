@@ -1,0 +1,15 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  MODULE: github.com/gophercore/compiles
+
+tasks:
+
+  default:
+    cmds:
+      - go install {{.MODULE}}
+
+  compiles:
+    cmd: go run {{.MODULE}} ./...
