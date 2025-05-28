@@ -28,5 +28,5 @@ The first run may take a while as it caches the latest version of `compiles`.
 To permanently install this tool as `compiles`, run:
 
 ```
-go install github.com/gophercore/compiles@latest ./...
+go install github.com/gophercore/compiles@latest
 ```
